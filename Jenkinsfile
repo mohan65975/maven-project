@@ -4,7 +4,7 @@ pipeline {
         stage('Build'){
              steps {
 				echo 'Now Archiving...1'
-                		mvn clean install
+                		find . -name pom.xml -execdir mvn clean install \;
 				echo 'Now Archiving...2'
             }
             post {
