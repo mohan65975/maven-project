@@ -4,7 +4,7 @@ pipeline {
         stage('Build'){
              steps {
 				echo 'Now Archiving...1'
-                		find . -name pom.xml -execdir mvn clean install \;
+                		mvn -f "D:\GetHelp Code\maven-project\pom.xml" clean install
 				echo 'Now Archiving...2'
             }
             post {
