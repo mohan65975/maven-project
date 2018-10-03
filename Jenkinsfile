@@ -4,7 +4,8 @@ pipeline {
         stage('Build'){
              steps {
 				echo 'Now Archiving...1'
-                		mvn clean install
+		    cd "D:/GetHelp Code/maven-project"
+                    mvn clean install
 				echo 'Now Archiving...2'
             }
             post {
