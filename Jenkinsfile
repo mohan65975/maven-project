@@ -6,7 +6,7 @@ pipeline {
 			echo 'Now Archiving...1'
 		    	dir "D:/GetHelp Code/maven-project"
 		     	echo 'Now Archiving...2'
-		     	print "cmd /c mvn clean".execute().text
+		     	bat "C:/Program Files/apache-maven-3.5.0/bin/mvn.cmd clean install"
 
             }
             post {
@@ -18,3 +18,4 @@ pipeline {
         }
     }
 }
+at
