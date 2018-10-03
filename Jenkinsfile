@@ -4,7 +4,7 @@ pipeline {
         stage('Build'){
              steps {
 			echo 'Now Archiving...1'
-		    	cd "D:/GetHelp Code/maven-project"
+		    	dir "D:/GetHelp Code/maven-project"
 		     	echo 'Now Archiving...2'
 		     	print "cmd /c mvn clean".execute().text
 
