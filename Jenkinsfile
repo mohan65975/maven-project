@@ -3,10 +3,10 @@ pipeline {
     stages{
         stage('Build'){
              steps {
-				echo 'Now Archiving...1'
-		    cd "D:/GetHelp Code/maven-project"
-                    mvn clean install
-				echo 'Now Archiving...2'
+			echo 'Now Archiving...1'
+		    	cd "D:/GetHelp Code/maven-project"
+		     	"cmd /c mvn clean install".execute()
+			echo 'Now Archiving...2'
             }
             post {
                 success {
